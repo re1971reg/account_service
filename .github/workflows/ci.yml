@@ -2,7 +2,7 @@ name: Account Service CI Pipeline
 
 on:
   pull_request:
-    branches: [ "chimera-master-stream10" ]
+    branches: [ "master", "dev" ]
 
     types: [ opened, reopened, synchronize, edited ]
 
