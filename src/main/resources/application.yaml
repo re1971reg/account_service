@@ -17,9 +17,26 @@ spring:
   liquibase:
     change-log: classpath:db/changelog/db.changelog-master.yaml
 
+#  messages:
+#    basename: classpath:messages
+
 server:
   port: 8090
+
+project-service:
+  host: localhost
+  port: 8082
+user-service:
+  host: localhost
+  port: 8080
 
 logging:
   level:
     root: info
+
+# swagger
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
