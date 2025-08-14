@@ -3,14 +3,16 @@ package faang.school.accountservice.enums;
 import lombok.Getter;
 
 @Getter
-public enum Currency {
-    USD("USD"),
-    EUR("EUR"),
-    RUB("RUR");
+public enum AccountStatus {
+    NEW("NEW"),
+    OPEN("OPEN"),
+    LOCK("LOCK"),
+    CLOSE("CLOSE");
 
     private final String name;
 
-    Currency(String name) {
+    AccountStatus(String name) {
         this.name = name;
     }
+
 }
