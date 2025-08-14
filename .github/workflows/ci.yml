@@ -3,12 +3,11 @@ name: Account Service CI Pipeline
 on:
   pull_request:
     branches: [ "master", "dev" ]
+    # types: [ opened, reopened, synchronize, edited ]
 
-    types: [ opened, reopened, synchronize, edited ]
-
-permissions:
-  issues: write
-  pull-requests: write
+# permissions:
+  # issues: write
+  # pull-requests: write
 
 jobs:
   build:
